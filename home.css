@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(#b3ecffb3,#fff ,#ffb6c1a8);
+    color: black;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#wrapper{      
+    border-radius: 50px;
+    width: 90%;
+    max-width: 1280px;
+    min-width: 900px;
+    margin: 2em auto 2em auto;
+}
+
+header{
+    width: 100%;
+    height: 6em;
+}
+
+header img{
+    width: auto;
+    height: 135%;
+    vertical-align: middle;
+    margin-left: 8%;
+    margin-top: -15px;
+    display: inline;
+}
+
+h1{
+    color: rgb(49, 9, 48);
+    margin-left: 15%;
+    font-size: 2.5em;
+    display: inline;
+    font-style: italic;
+    text-shadow: 5px 8px 4px #ddd;
+}
+
+nav{
+    width: 100%;  
+    font-weight: bold;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0 1em 0;
+    z-index: 50;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 0.5em;
+}
+
+nav ul.primary li {
+    float: left;
+    border: 2px solid rgb(255, 250, 250);
+    border-radius: 20px;
+    background-color: #fffdee;
+    margin-left: 0.8em;
+}
+
+nav ul.primary li:hover{
+    background-color: #f8ffd3c6;
+}
+
+nav ul.sub{
+    position: absolute;
+    width: 17%;
+    display: none;
+}
+
+nav ul.sub li{
+    border: 2px solid black;
+    float: none;
+    margin-left: auto;
+    margin-top: 2px;
+    background-color: #fffdee;
+}
+
+nav ul.primary li:hover ul{
+    display: block;
+}
+
+nav ul.sub li a:hover{
+    border-radius: 20px;
+    background-color: #f8ffd3c6;
+}
+
+nav ul.sub li:first-child{
+    margin-top: 10px   ;
+}
+
+.search{
+    position: relative;
+    left: 6.5%;
+}
+
+.search input{
+    padding: 9px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 0.3em;
+    font-size: 15px;
+}
+
+.search form{
+    display: flex;
+    margin: 0;
+}
+
+.search input:hover{
+    border: 2px solid black;
+}
+
+.search button{
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 0;
+    color: #333;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.search button:hover{
+    background-color: rgb(213, 213, 213);
+}
+
+.login img{
+    margin-right: 2.5em;
+    width: 2em;
+    border-radius: 10px;
+}
+
+footer{
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    line-height: 20px;
+    border-top: 2px solid rgb(13, 13, 13);
+    display: block;
+}
+
+.top img{
+    position: fixed;
+    background-color: white;
+    padding: 10px;
+    width: 3em;
+    height: 3em;
+    bottom: 2em;
+    right: 3%;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+main img{
+    width: 100%;
+    height: 35em;
+}
+
+video{
+    float: right;
+    width: 35%;
+    height: auto;
+    margin: 3em 5em 0;
+    border-radius: 50%;
+}
+
+.music{
+    position: fixed;
+    width: 3em;
+    height: 3em;
+    border-radius: 20px;
+    bottom: 2em;
+    right: 7%;
+    overflow: hidden;
+}
+
+.music img{
+    width: 3em;
+    height: 3em;
+}
+
+.music:hover{
+    height: auto;
+    width: auto;
+}
+
+.container1{
+    width: 40%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 4% 4.5% 4% 4.5%;
+    background-color: #fffdee ;
+}
+
+.container2{
+    width: 35%;
+    height: 15em;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 4% 7% 4% 7%;
+    background-color: #fffdee ;
+}
+
+.description{
+    margin: 1em ;
+}
+
+.description img{
+    width: 1.5em;
+    height: 1.5em;
+    margin: 1.5em 0 0 1.5em;
+}
+
+.description a{
+    text-decoration: none;
+    color: black;
+}
+
+.description a:hover{
+    text-decoration: underline;
+    color: rgb(72, 72, 151);
+}
+
+.description h3, .description p{
+    font-size: .9em;
+}
+
+.description h2,.description h3, .description p{
+    margin: 0 2em 0 2em ;
+    padding: 15px 1em 10px 1em;
+}
+
+.container-mainpage{
+    width: 100%;
+    height: 60%;
+    margin: 1em 0.5% 2em 0.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mainpage-img img{
+    border-radius: 50%;
+    width: 11em;
+    height: 11em;
+    margin: 2em 2em;
+}
+
+.mainpage-name{
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: #fffdee;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em;
+}
+
+.mainpage-img a{
+    text-decoration: none;
+}
+
+.mainpage-name:hover{
+    background-color:#f8ffd3c6;
+}
+
+main h2{
+    font-size: 1.3em;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+main h3, main p{
+    font-size: .9em;
+}
+
+main h2,main h3,main p{
+    margin: 0 2em 0 2em ;
+    padding: 15px 1em 10px 1em;
+}
+
+details{
+    width: 90%;
+    justify-content: center;
+    background-color: rgba(242, 175, 215, 0.608);
+    border-radius: 20px;
+    margin: 2em 5% 3em 5%;
+}
+
+summary{
+    line-height: 2.5em;
+    font-size: 1.2em;
+    padding-left: 2em;
+}
+
+.answer{
+    width: 90%;
+    text-align: left;
+    padding: 1em;
+}
+
+.answer p{
+    border: 2px solid black;
+    padding: 1.5em;
+    background-color: rgba(255, 208, 208, 0.67);
+    font-size: 1em;
+}
+
+.container-img-team{
+    width: 100%;
+    height: 50%;
+    margin: 3em auto 1em auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img-team img{
+    border: 2px solid black;
+    border-radius: 20%;
+    width: 180px;
+    height: 180px;
+    margin: 0 8em 0 10em;
+}
+
+.img-team p{
+    text-align: center;
+    font-weight: bold;
+    padding-left: 59px;
+    padding-top: 10px;
+    color: black;
+    font-size: 1.5em;
+}
+
+.img-team2 img{
+    border: 2px solid black;
+    border-radius: 30%;
+    width: 180px;
+    height: 180px;
+    margin-left: 100px;
+}
+
+.img-team2 p{
+    text-align: center;
+    font-weight: bold;
+    padding-left: 80px;
+    padding-top: 10px;
+    color: black;
+    font-size: 1.5em;
+}
+
+.details a{
+    text-decoration: none;
+    color: black;
+}
+
+.details a:hover{
+    text-decoration: underline;
+    color: rgb(72, 72, 151);
+}
+
+
+
+
+

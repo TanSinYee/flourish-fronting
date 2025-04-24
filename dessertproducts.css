@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(#b3ecffb3,#fff ,#ffb6c1a8);
+    color: black;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#wrapper{      
+    border-radius: 50px;
+    width: 90%;
+    max-width: 1280px;
+    min-width: 900px;
+    margin: 2em auto 2em auto;
+}
+
+header{
+    width: 100%;
+    height: 6em;
+}
+
+header img{
+    width: auto;
+    height: 135%;
+    vertical-align: middle;
+    margin-left: 8%;
+    margin-top: -15px;
+    display: inline;
+}
+
+h1{
+    color: rgb(49, 9, 48);
+    margin-left: 15%;
+    font-size: 2.5em;
+    display: inline;
+    font-style: italic;
+    text-shadow: 5px 8px 4px #ddd;
+}
+
+nav{
+    width: 100%;  
+    padding: 2em 0 1em 0;
+    font-weight: 600;
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #7393B3;
+}
+
+nav a{
+    text-decoration: none;
+    color:  black;
+}
+
+nav a:hover{
+    color: #2b9bc4;
+    text-decoration: underline;
+}
+
+.goback{
+    text-align: left;
+    float: left;
+    margin: 0 0 0 3em;
+}
+
+.music{
+    position: fixed;
+    width: 3em;
+    height: 3em;
+    bottom: 2em;
+    right: 7%;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.music img{
+    width: 3em;
+    height: 3em;
+    z-index: 9999;
+
+}
+
+.music:hover{
+    height: auto;
+    width: auto;
+    z-index: 9999;
+}
+
+.top img{
+    position: fixed;
+    background-color: white;
+    padding: 10px;
+    width: 3em;
+    height: 3em;
+    bottom: 2em;
+    right: 3%;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+h2 {
+    margin: 1em 0 0 1em;
+    font-size: 2em;
+    color: black;
+    font-style: italic;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 3em;
+}
+
+.container .card {
+    position: relative;
+    width: 300px;
+    height: 320px;
+    background-color: #fffff0;
+    margin-top: 3em;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 100px rgba(0,0,0,0.5);
+}
+
+.container .card .img-box {
+    position: relative;
+    width: 250px;
+    height: 227px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    margin: auto;
+}
+
+.container .card .img-box img {
+    width: 100%;
+    height: 100%;
+    transition: scale 500ms;
+}
+
+.container .img-box:hover img {
+    scale: 120%;
+}
+
+.container .card .textbox {
+    padding-top: 10px;
+    color: black;
+    font-size: .8em;
+}
+
+.container .yogurt {
+    border: 5px solid rgb(172, 217, 248);
+    background-color: #fffdee;
+}
+
+.container .yogurt th,td{
+    border: 2px solid black;
+    padding: 5px;
+}
+
+footer{
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    line-height: 20px;
+    border-top: 2px solid rgb(13, 13, 13);
+    display: block;
+}

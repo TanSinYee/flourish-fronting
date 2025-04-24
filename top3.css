@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(#b3ecffb3,#fff ,#ffb6c1a8);
+    color: black;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#wrapper{      
+    border-radius: 50px;
+    width: 90%;
+    max-width: 1280px;
+    min-width: 900px;
+    margin: 2em auto 2em auto;
+}
+
+header{
+    width: 100%;
+    height: 6em;
+}
+
+header img{
+    width: auto;
+    height: 135%;
+    vertical-align: middle;
+    margin-left: 8%;
+    margin-top: -15px;
+    display: inline;
+}
+
+h1{
+    color: rgb(49, 9, 48);
+    margin-left: 15%;
+    font-size: 2.5em;
+    display: inline;
+    font-style: italic;
+    text-shadow: 5px 8px 4px #ddd;
+}
+
+nav{
+    width: 100%;  
+    padding: 2em 0 2px 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #7393B3;
+}
+
+nav a{
+    text-decoration: none;
+    color:  black;
+}
+
+nav a:hover{
+    color: #2b9bc4;
+    text-decoration: underline;
+}
+
+.goback{
+    text-align: left;
+    float: left;
+    margin: 0 0 0 3em;
+}
+
+.next{
+    text-align: right;
+    float: right;
+    margin: 0 3em 0 0;
+}
+
+.music{
+    position: fixed;
+    width: 3em;
+    height: 3em;
+    bottom: 2em;
+    right: 7%;
+    overflow: hidden;
+}
+
+.music img{
+    width: 3em;
+    height: 3em;
+}
+
+.music:hover{
+    height: auto;
+    width: auto;
+}
+
+h2 {
+    margin: 1em 0 0 1em;
+    font-size: 2em;
+    color: black;
+    font-style: italic;
+}
+
+.container2 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+    padding: 20px;
+}
+
+.container2 .card:hover {
+    height: 500px;
+}
+
+.container2 .card {
+    position: relative;
+    width: 380px;
+    height: 250px;
+    background-color: #fffff0;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 100px rgba(0,0,0,0.5);
+    transition: 1s ease-in-out;
+}
+
+.container2 .card .img-box {
+    position: relative;
+    width: 225px;
+    height: 175px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    margin: auto;
+}
+
+.container2 .card .img-box img {
+    width: 100%;
+}
+
+.container2 .card .textbox {
+    position: relative;
+    padding: 50px 15px;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.container2 .card .textbox h3 {
+    text-align: left;
+    line-height: 1em;
+    margin-top: 15px;
+    font-size: 1.5em;
+    color: black;
+}
+
+.container2 .card .textbox dt {
+    text-align: left;
+    line-height: 1.5em;
+    margin-top: 1px;
+    font-size: 1em;
+    color: black;
+}
+
+.container2 .card .textbox dd {
+    line-height: 1em;
+    margin-top: 10px;
+    margin-left: 1em;
+    font-size: 1em;
+    color: black;
+}
+
+.container2 .card:hover .textbox {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.2s;
+}
+
+footer{
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    line-height: 20px;
+    border-top: 2px solid rgb(13, 13, 13);
+    display: block;
+}
+
+
+
+
+
+
+
+
